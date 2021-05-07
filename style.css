@@ -1,12 +1,24 @@
 #buttonClass {
+  display: inline-block;
   background-color: #ffebee;
-  border: none;
   color: white;
-  padding: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 50%;
+  line-height: 50px;
+  animation: scale 10s ease-in 1 backwards;
+}
+
+@keyframes scale {
+  0% {
+    background-color: #fff;
+    transform: scale(0);
+  }
+  100% {
+    background-color: #f00;
+    transform: scale(10);
+  }
 }
